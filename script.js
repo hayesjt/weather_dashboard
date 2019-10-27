@@ -60,33 +60,33 @@ $.ajax({
 // DISPLAYING 5 DAY FORCAST WEATHER - date, icon image, temp, humidity //
 
 // URL FOR 5 DAY WEATHER FORCAST API //
-function fiveDay(city){
-var queryURLfive = "https://api.openweathermap.org/data/2.5/forecast?" +
-    "q=" + city + "&units=imperial&appid=" + APIKey;
+// function fiveDay(city){
+// var queryURLfive = "https://api.openweathermap.org/data/2.5/forecast?" +
+//     "q=" + city + "&units=imperial&appid=" + APIKey;
 
-    $.ajax({
-        url: queryURLfive,
-        method: "GET"
-    })
-        .then(function (response) {
+    // $.ajax({
+    //     url: queryURLfive,
+    //     method: "GET"
+    // })
+    //     .then(function (response) {
 
-            console.log(queryURLfive);
-            console.log(response);  
+    //         console.log(queryURLfive);
+    //         console.log(response);  
 
-    for (var i=0; i<response.list.length; i++)
+    // for (var i=0; i<response.list.length; i++)
 
-    if (response.list[i].dt_txt )
-        $(".day-one").html();
-        $(".day-two").html();
-        $(".day-three").html();
-        $(".day-four").html();
-        $(".day-five").html();
-    })
+    // if (response.list[i].dt_txt )
+    //     $(".day-one").html();
+    //     $(".day-two").html();
+    //     $(".day-three").html();
+    //     $(".day-four").html();
+    //     $(".day-five").html();
+    // })
 
 
 
     $(".btn").on("click", function() { 
         var searchTerm = $("#user-search").val();
         getCurrentWeather(searchTerm);
-        fiveDay(searchTerm);
+        // fiveDay(searchTerm);
     })
