@@ -1,5 +1,24 @@
 /*NAV BAR/HEADER STYLING*/
 
+
 /*CONTENT SYLING*/
+
+.search-div {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+#user-search {
+    border: 2px solid darkgray;
+    border-radius: 10px;
+}
+
+.current-weather {
+    float:right;
+}
+
+.card {
+    max-width: 300px;
+}
 
 /*FOOTER CONTENT*/

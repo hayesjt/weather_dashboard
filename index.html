@@ -15,22 +15,24 @@
 <body>
 
     <!--NAV BAR/HEADER-->
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
+    </nav>
     <!--NAV BAR/HEADER END-->
 
 
     <!--PAGE CONTENT-->
     <div class="search-div">
-        <P>Where do you want to know the weather? (City, State)</P>
         <input type="text" name="search-box" id="user-search">
-        <button class="btn" type="button">Search</button>
+        <button class="btn-search" type="button">Search</button>
     </div>
     <div class="old-cities-div">
         <!--empty until JavaScript-->
     </div>
     <div class="current-weather">
         <div class="city-name"></div>
+        <img class="icon-image"/>
         <div class="todays-date"></div>
-        <div class="icon-image"></div>
         <div class="todays-temp"></div>
         <div class="todays-humidity"></div>
         <div class="todays-wind-speed"></div>
@@ -41,8 +43,7 @@
     </div>
     <!--PAGE CONTENT END-->
 
-    <!--FOOTER CONTENT-->
-    <!--FOOTER END-->
+    
 
     <!--JS LINKS-->
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
