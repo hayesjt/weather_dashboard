@@ -27,9 +27,9 @@ $.ajax({
         $(".city-name").html(response.name);
         $(".todays-date").html(today);
         $(".icon-image").attr("src", "https://api.openweathermap.org/img/w/" + response.weather[0].icon);
-        $(".todays-temp").html("Current Temperature:" + response.main.temp);
+        $(".todays-temp").html("Current Temperature:" + response.main.temp + "°");
         $(".todays-humidity").html("Humidity:" + response.main.humidity + "%");
-        $(".todays-wind-speed").html("Wind Speed:" + response.wind.speed);
+        $(".todays-wind-speed").html("Wind Speed:" + response.wind.speed + "mph");
         getUv (lon, lat);
     })
 }
@@ -81,10 +81,10 @@ var queryURLfive = "https://api.openweathermap.org/data/2.5/forecast?" +
             var dayBody = $('<div>').addClass('card-body');
             var dayWeather = $('<img>').attr("src", "https://api.openweathermap.org/img/w/" + response.list[i].weather[0].icon);
             //console.log(dayDiv);
-            var temp = $('<p>').addClass('card-text').text("Temp: " + data.main.temp);
-            var humidity = $('<p>').addClass('card-text').text("Humidity: " + data.main.humidity + "%");
             var time = $('<h5>').addClass('card-title').text(new Date(data.dt_txt).toLocaleDateString())
-            $(dayBody).append(temp, humidity, time);
+            var temp = $('<p>').addClass('card-text').text("Temp: " + data.main.temp + "°");
+            var humidity = $('<p>').addClass('card-text').text("Humidity: " + data.main.humidity + "%");
+            $(dayBody).append(time, temp, humidity,);
             $(dayBody).append(dayWeather);
             //console.log(dayBody);
             $(dayDiv).append(dayBody);

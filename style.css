@@ -1,24 +1,77 @@
+/* BODY STYLING */
+body {
+    background-image: url(images/background.png); 
+    min-height: 100vh;
+    position: relative;
+}
 /*NAV BAR/HEADER STYLING*/
-
-
-/*CONTENT SYLING*/
-
-.search-div {
-    margin-top: 30px;
-    margin-left: 20px;
+.navbar {
+    margin-bottom: 10px;
+}
+.navbar-brand {
+    margin: auto;
 }
 
+/*CONTENT SYLING*/
+/* SEARCH FUNCTION STYLING */
+.search-div {
+    text-align:center;
+}
 #user-search {
     border: 2px solid darkgray;
     border-radius: 10px;
 }
 
+#user-search:focus {
+    outline: none;
+}
+
+.btn-search {
+    background-color: #343a40;
+    color: white;
+    border: 2px solid darkgray;
+    border-radius: 10px;
+    padding: 1px 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-search:hover {
+    background-color: white;
+    color: #343a40;
+}
+
+.btn-search:focus {
+    outline: none;
+}
+
+/* OLD CITIES STYLING */
+/* CURRENT WEATHER STYLING */
 .current-weather {
-    float:right;
+    background-color: white;
+    border: 2px solid darkgray;
+    border-radius: 10px;
+    text-align: center;
 }
 
+/* FIVE DAY WEATHER FORCAST STYLING */
 .card {
-    max-width: 300px;
+    float: right;
+    margin: 10px;
 }
 
-/*FOOTER CONTENT*/
+
+
+/* footer CSS */
+footer {
+    background-color: #343a40;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom:10px;
+    color: white;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: x-small;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}

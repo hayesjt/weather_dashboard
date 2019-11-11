@@ -16,34 +16,49 @@
 
     <!--NAV BAR/HEADER-->
     <nav class="navbar navbar-dark bg-dark">
-        <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
+        <span class="navbar-brand">Weather Dashboard</span>
     </nav>
     <!--NAV BAR/HEADER END-->
 
 
     <!--PAGE CONTENT-->
-    <div class="search-div">
-        <input type="text" name="search-box" id="user-search">
-        <button class="btn-search" type="button">Search</button>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="search-div">
+                    <input type="text" name="search-box" id="user-search">
+                    <button class="btn-search" type="button">Search</button>
+                </div>
+                <div class="old-cities-div">
+                    <!--empty until JavaScript-->
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="current-weather">
+                    <h3>Current Weather:</h3>
+                    <h5 class="city-name"></h5>
+                    <div class="todays-date"></div>
+                    <img class="icon-image" />
+                    <div class="todays-temp"></div>
+                    <div class="todays-humidity"></div>
+                    <div class="todays-wind-speed"></div>
+                    <div class="todays-uv-index"></div>
+                </div>
+                <div class="current-5-day-forcast">
+                    <!--empty until JavaScript-->
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="old-cities-div">
-        <!--empty until JavaScript-->
-    </div>
-    <div class="current-weather">
-        <div class="city-name"></div>
-        <img class="icon-image"/>
-        <div class="todays-date"></div>
-        <div class="todays-temp"></div>
-        <div class="todays-humidity"></div>
-        <div class="todays-wind-speed"></div>
-        <div class="todays-uv-index"></div>
-    </div>
-    <div class="current-5-day-forcast">
-        <!--empty until JavaScript-->
-    </div>
+
     <!--PAGE CONTENT END-->
 
-    
+    <!--Footer START-->
+    <footer>
+        &copy;Hay.Deign.Lee
+    </footer>
+    <!--Footer END-->
 
     <!--JS LINKS-->
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
