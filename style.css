@@ -16,7 +16,9 @@ body {
 /* SEARCH FUNCTION STYLING */
 .search-div {
     text-align:center;
+    margin-bottom:10px;
 }
+
 #user-search {
     border: 2px solid darkgray;
     border-radius: 10px;
@@ -46,6 +48,19 @@ body {
 }
 
 /* OLD CITIES STYLING */
+.old-cities-div {
+    text-align: center;
+}
+
+.oldCityClass {
+    text-align: center;
+    background-color: #343a40;
+    color: white;
+    border-radius: 10px;
+    width: 200px;
+    margin-top: 5px;
+}
+
 /* CURRENT WEATHER STYLING */
 .current-weather {
     background-color: white;
